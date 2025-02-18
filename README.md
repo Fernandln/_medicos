@@ -16,7 +16,16 @@
 - Atualização de dados do médico
 - Remoção de médicos
 
+# Aula 02
 
+Verbos / Métodos HTTP
+`get` -> é quando você pede algo de retorno
+`POST` -> é quando você envia informações
+PUT
+DELETE
+
+request [requisição] -> é o que você passa esperando o retorno.
+Response [Resposta] -> é a resposta recebida.
 
 
 - Construir um pacote chamado endereco e criar uma classe Endereco com os atributos listados abaixo. Além disso, crie os getters e setters, construtor com todos os parametros e construtor sem nenhum parametro. (logradouro, bairro, cep, cidade, uf, numero, complemento)
