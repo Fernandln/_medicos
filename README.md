@@ -29,7 +29,7 @@ Response [Resposta] -> é a resposta recebida.
 
 # Aula 03
 
-DTO -> Padrão de projetos onde isolamos cada item que está sendo enviado pleo ``simulador de requisição``. DATA TRANSFER OBJECT
+`DTO` -> Padrão de projetos onde isolamos cada item que está sendo enviado pleo ``simulador de requisição``. DATA TRANSFER OBJECT
 - Criação de uma classe record chamada DadosCadastroMedico, onde iremos receber os dados do json e converter em dados autonomos.
 
     `api` -> É um conjunto de açoes e regras para a comunicação entre diferentes ferramentas e sistemas. Define como os sistemas devem interagir.
@@ -97,3 +97,43 @@ DTO -> Padrão de projetos onde isolamos cada item que está sendo enviado pleo 
 * Coloque todos os atributos privados e do tipo String.
 
 
+`Embedded`
+-> Anota que uma classe faz parte dessa tabela no banco de dados.
+
+
+`Embeddable`
+-> Anota que essa classe ira fazer parte de uma tabela de outra classe.
+
+
+``
+
+`@GeneratedValue(strategy = GenerationType.IDENTITY)`
+-> informa que aquele atributo tera uma geração de valor automatica.
+-> Strategy - é a estrategia utilizada
+-> GenerationType - tipo de geração utilizada
+-> IDENTITY - a geração automatica sera atraves do ID.
+
+
+
+
+4. BANCO DE DADOS
+
+`Chave primaria(PK)` -> Atributo que identifica a tabela no banco de dados.
+``Chave Estrangeira(FK)` -> é o atributo que se relaciona cm uma tabela que possui esse atributo como cave primariano banco de dados.
+
+
+
+
+
+5. Padrões de Projeto
+
+`DTO` -> Padrão de projetos onde isolamos cada item que está sendo enviado pleo ``simulador de requisição``. DATA TRANSFER OBJECT
+- Criação de uma classe record chamada DadosCadastroMedico, onde iremos receber os dados do json e converter em dados autonomos.
+
+`DAO` -> É um padrao de projetos em que separamos a logica do acesso ao banco de dados do restante da aplicação.
+
+`INTERFACE` -> É um tipo de padrao de projetos presente no java onde uma classe é declarada e ela possui atributos constantes e não pode instanciada. É conhecida como uma classe de contrato onde você podera utilizar os métodos e atributos dessa classe.
+
+`INJEÇÃO DE DEPENDENCIAS` -> É um tipo de padrão de projetos [DI] onde você informa ao springboot que ele irá ficar responsável pela criação de determinado dado (ele que conhece como funciona).
+
+``
